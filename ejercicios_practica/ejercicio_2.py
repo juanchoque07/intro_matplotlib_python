@@ -37,13 +37,19 @@ if __name__ == '__main__':
 
     # Alumno: Realizar un gráfico que representen las dos funciones
     # Para ello se debe llamar dos veces a "plot" con el mismo "ax"
+    fig = plt.figure()
+    ax = fig.add_subplot()
 
+    ax.plot(x, y1, c="red", label= "Funcion potencia cuadrada")
+    ax.plot(x, y2, c="blue", label= "Funcion potencia cubica")
     # Se debe colocar en la leyenda la función que representa
     # cada función
-
+    ax.legend()
+    ax.grid()
     # Cada función dibujarla con un color distinto
     # a su elección
 
     # Crear acá su gráfico
+    plt.show()
 
     print("terminamos")
